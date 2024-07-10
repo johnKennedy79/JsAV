@@ -8,11 +8,13 @@
     <script src="./app.js" defer></script>
   </head>
   <body>
-    <h1>JS AV Interaction</h1>
-    <img src="./assets/img/bike.jpg" />
+    <section class="header">
+      <h1>JS AV Interaction</h1>
+      <img src="./assets/img/bike.jpg" />
+    </section>
     <section class="container">
       <div class="audioControl">
-        <audio src="./assets/mp3/action-movie-trailer-178444.mp3"></audio>
+        <audio src="./assets/mp3/action-movie-trailer-178444.mp3" loop></audio>
         <div class="volume">
           <label for="vol">Volume</label>
           <input type="range" id="vol" min="0" max="1" step="0.1" />
@@ -25,11 +27,19 @@
         <button id="stop"><img src="./assets/img/stop-button.png" /></button>
         <button id="skf"><img src="./assets/img/fast-forward.png" /></button>
         <button id="mute"><img src="./assets/img/volume.png" /></button>
-        <div class="durationTime">
-          <p class="currentTime">0.00</p>
-          /
-          <p class="totalTime">0.00</p>
-        </div>
+      </div>
+    </section>
+
+    <section class="vidContainer">
+      <video src="./assets/mp4/bikeJump.mp4" loop></video>
+      <div class="videoControl">
+        <button id="vskb"><img src="./assets/img/rapid-rewind.png" /></button>
+        <button id="vplay"><img src="./assets/img/play-button.png" /></button>
+        <button id="vpause">
+          <img src="./assets/img/video-pause-button.png" />
+        </button>
+        <button id="vstop"><img src="./assets/img/stop-button.png" /></button>
+        <button id="vskf"><img src="./assets/img/fast-forward.png" /></button>
       </div>
     </section>
   </body>

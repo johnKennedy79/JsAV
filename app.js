@@ -1,9 +1,9 @@
 console.log("Test");
 //check if audio has loaded
-const image = document.querySelector("img");
-image.addEventListener("load", function () {
-  console.log("Image has Loaded");
-});
+// const image = document.querySelector("img");
+// image.addEventListener("load", function () {
+//   console.log("Image has Loaded");
+// });
 //doesn't work on audio works with img
 
 //get information about the audio tag
@@ -47,4 +47,32 @@ const skbbtn = document.getElementById("skb");
 skbbtn.addEventListener("click", function () {
   audio.play();
   audio.currentTime -= 15;
+});
+
+const video = document.querySelector("video");
+
+//making controls play pause stop skip
+const vplaybtn = document.getElementById("vplay");
+vplaybtn.addEventListener("click", function () {
+  video.play();
+});
+const vpausebtn = document.getElementById("vpause");
+vpausebtn.addEventListener("click", function () {
+  video.pause();
+});
+const vstopbtn = document.getElementById("vstop");
+vstopbtn.addEventListener("click", function () {
+  video.pause();
+  video.currentTime = 0;
+});
+
+const vskfbtn = document.getElementById("vskf");
+vskfbtn.addEventListener("click", function () {
+  video.play();
+  video.currentTime += 15; //current time not defined
+});
+const vskbbtn = document.getElementById("vskb");
+vskbbtn.addEventListener("click", function () {
+  video.play();
+  video.currentTime -= 15;
 });
