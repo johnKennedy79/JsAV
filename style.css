@@ -1,0 +1,32 @@
+.audioControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.volume {
+  display: flex;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 18pt;
+}
+.volume:hover {
+  background-color: greenyellow;
+}
+.volume:focus {
+  background-color: greenyellow;
+}
+
+button {
+  background: none;
+}
+button:hover {
+  background-color: greenyellow;
+}
+button:focus {
+  background-color: greenyellow;
+}
+.durationTime {
+  display: flex;
+  align-items: center;
+}
